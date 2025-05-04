@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: auth
+
+  datasource:
+    url: jdbc:postgresql://auth_db:5432/monitor_auth
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    
+springdoc:
+  api-docs:
+    enabled: true
